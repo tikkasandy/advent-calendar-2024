@@ -1,0 +1,8 @@
+$day-weight: 90px;
+$day-height: calc($day-weight * 1.18);
+$day-radius: calc($day-weight * 1.88);
+
+// transitions
+$transition-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$active-scale: 0.98;

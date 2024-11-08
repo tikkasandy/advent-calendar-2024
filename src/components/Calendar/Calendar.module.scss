@@ -1,0 +1,122 @@
+@import '/src/styles/shared.scss';
+
+.Calendar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.Day {
+    position: relative;
+
+    display: flex;
+    width: $day-weight;
+    height: $day-height;
+    border-radius: $day-radius;
+
+    justify-content: center;
+    align-items: center;
+
+        overflow: hidden;
+
+    transition: all $transition-duration $timing-function;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.Grey {
+    background-color: $grey-color;
+    color: $red-color;
+}
+
+.Yellow {
+    background-color: $yellow-color;
+    color: $green-color;
+}
+
+.Green {
+    background-color: $green-color;
+    color: $yellow-color;
+    fill: $white-color;
+}
+
+.Red {
+    background-color: $red-color;
+    color: $grey-color;
+    fill: $white-color;
+}
+
+.Orange {
+    background-color: $orange-color;
+    color: $white-color;
+    fill: $green-color;
+}
+
+.Link {
+    width: 100%;
+    height: 100%;
+}
+
+.Date {
+    position: absolute;
+
+    font-size: 32px;
+
+
+    &.LeftTop {
+        top: 5%;
+        left:10%;
+    }
+
+    &.LeftBottom {
+        bottom: 10%;
+        left: 10%
+    }
+
+    &.RightTop {
+        top: 5%;
+        right:20%;
+    }
+
+    &.RightBottom {
+        bottom: 10%;
+        right: 15%;
+    }
+}
+
+.Logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &.Small {
+        height: $day-height/1.4;
+    }
+
+    &.Medium {
+        height: $day-height/1.5;
+    }
+
+    &.Big {
+        height: $day-height/1.7;
+    }
+
+    &.Top {
+        top: 45%;
+    }
+
+    &.Bottom {
+        top: 55%;
+    }
+
+    &.Right {
+        left: 55%;
+    }
+
+    &.Left {
+        left: 45%;
+    }
+}

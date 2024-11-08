@@ -1,0 +1,61 @@
+@import './shared.scss';
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: "Caveat", cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: $black-color;
+    background-image: url('../images/img/cover.png');
+    background-size: 1000px;
+}
+
+#root {
+    // display: flex;
+    // flex-direction: column;
+
+    min-height: 100vh;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    fill: inherit;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
