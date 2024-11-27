@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/advent-calendar-2024/static/css/main.703f0545.css",
+    "main.css": "/advent-calendar-2024/static/css/main.a34b1da4.css",
     "main.js": "/advent-calendar-2024/static/js/main.6b48b770.js",
     "static/media/sprite.svg": "/advent-calendar-2024/static/media/sprite.4b227e108e666b6eb006078ed42135f1.svg",
     "static/media/cover.png": "/advent-calendar-2024/static/media/cover.b67110139e05fd0162b7.png",
@@ -8,11 +8,11 @@
     "static/media/tasksSprite.svg": "/advent-calendar-2024/static/media/tasksSprite.10f3c9f86ad82acd29d107483ddd54c3.svg",
     "static/media/twinkles.svg": "/advent-calendar-2024/static/media/twinkles.fae5728b80d5d6cbb7f84bdadd49d3b8.svg",
     "index.html": "/advent-calendar-2024/index.html",
-    "main.703f0545.css.map": "/advent-calendar-2024/static/css/main.703f0545.css.map",
+    "main.a34b1da4.css.map": "/advent-calendar-2024/static/css/main.a34b1da4.css.map",
     "main.6b48b770.js.map": "/advent-calendar-2024/static/js/main.6b48b770.js.map"
   },
   "entrypoints": [
-    "static/css/main.703f0545.css",
+    "static/css/main.a34b1da4.css",
     "static/js/main.6b48b770.js"
   ]
 }
