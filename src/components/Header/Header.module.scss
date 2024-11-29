@@ -1,0 +1,58 @@
+@import "/src/styles/shared.module.scss";
+
+.Header {
+    position: relative;
+
+    max-width: $max-width;
+    width: 100%;
+    height: $header-height;
+    
+    margin-bottom: 10px;
+    
+    font-size: $date-size;
+    color: $white-color;
+}
+
+.Wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+    color: $white-color;
+    background-color: transparent;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50%;
+    
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+    &:hover {
+        // background-color: $hover-color;
+    }
+
+    &:active {
+        // background-color: $active-color;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.Svg {
+    width: 30px;
+    height: 30px;
+}

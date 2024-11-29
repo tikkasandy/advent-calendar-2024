@@ -1,0 +1,60 @@
+@import "/src/styles/shared.module.scss";
+
+.TwinklesRight {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    .Twinkle1 {
+        position: absolute;
+        top: 20%;
+        right: -25%;
+
+        width: 30px;
+        aspect-ratio: 1;
+
+        fill: $red-color;
+
+        transform: rotate(25deg);
+
+        animation: fadeOpacity 5s infinite ease-in-out;
+
+        &.Red {
+            fill: $green-color;
+        }
+    }
+
+    .Twinkle2 {
+        position: absolute;
+        top: -12%;
+        left: 18%;
+
+        width: 15px;
+        aspect-ratio: 1;
+
+        fill: $yellow-color;
+
+        transform: rotate(-50deg);
+
+        animation: fadeOpacity 2.5s infinite ease-in-out;
+
+        &.Yellow {
+            fill: $orange-color;
+        }
+    }
+
+    .Twinkle3 {
+        position: absolute;
+        bottom: -12%;
+        left: 35%;
+
+        width: 8px;
+        aspect-ratio: 1;
+
+        fill: $white-color;
+
+        transform: rotate(-50deg);
+
+        animation: fadeOpacity 3.5s infinite ease-in-out;
+    }
+}

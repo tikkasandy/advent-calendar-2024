@@ -1,0 +1,28 @@
+const christmasStash = [
+  { date: 1, password: "Ялинка", stash: "Під подушкою" },
+  { date: 2, password: "Сніг", stash: "У шафі" },
+  { date: 3, password: "Сніговик", stash: "Під ялинкою" },
+  { date: 4, password: "Дзвінок", stash: "У сумці" },
+  { date: 5, password: "Подарунок", stash: "На столі" },
+  { date: 6, password: "Коляда", stash: "В ящику столу" },
+  { date: 7, password: "Зірка", stash: "Під ліжком" },
+  { date: 8, password: "Чудо", stash: "На полиці" },
+  { date: 9, password: "Сніжинка", stash: "У шухляді" },
+  { date: 10, password: "Миколай", stash: "У рюкзаку" },
+  { date: 11, password: "Гірлянда", stash: "Під кріслом" },
+  { date: 12, password: "Вінок", stash: "У ящику на кухні" },
+  { date: 13, password: "Казка", stash: "У комоді" },
+  { date: 14, password: "Чарівник", stash: "На підвіконні" },
+  { date: 15, password: "Санчата", stash: "В кишені пальто" },
+  { date: 16, password: "Диво", stash: "На книжковій полиці" },
+  { date: 17, password: "Свято", stash: "У взутті" },
+  { date: 18, password: "Духмяний", stash: "В коробці для іграшок" },
+  { date: 19, password: "Янгол", stash: "У ванній кімнаті" },
+  { date: 20, password: "Свічка", stash: "На балконі" },
+  { date: 21, password: "Пісня", stash: "У скриньці" },
+  { date: 22, password: "Зима", stash: "Під ковдрою" },
+  { date: 23, password: "Сяйво", stash: "У холодильнику" },
+  { date: 24, password: "Різдво", stash: "Під дверима" },
+];
+
+export default christmasStash;

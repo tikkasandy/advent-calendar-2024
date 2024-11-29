@@ -1,0 +1,30 @@
+// sizes
+$max-width: 600px;
+
+$day-weight: 90px;
+$day-height: calc($day-weight * 1.18);
+$day-radius: calc($day-weight * 1.88);
+
+$header-height: 60px;
+
+// font-sizes
+$date-size: 45px;
+
+
+// transitions
+$transition-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$active-scale: 0.98;
+
+// animations
+@keyframes fadeOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

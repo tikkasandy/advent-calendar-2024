@@ -1,0 +1,14 @@
+@import '/src/styles/shared.module.scss';
+
+.Main {
+    // height: calc(100svh - $header-height);
+
+     width: 100vw;
+
+     padding: 10px 20px;
+
+    display: flex;
+    justify-content: center;
+
+    box-sizing: border-box;
+}

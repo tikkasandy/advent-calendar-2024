@@ -1,38 +1,226 @@
-// body {
-//     background-image: none;
-//     background-color: aqua;
-// }
-.Task {
-    color: white;
-    font-size: 100px;
+@import '/src/styles/shared.module.scss';
+
+.Day {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
 }
 
-.Button {
-  box-sizing: border-box;
-  min-width: 80px;
-  padding: 10px;
+.TaskWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100px;
+    margin-bottom: 20px;
+}
 
-  transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  text-transform: capitalize;
+.Task {
+    font-size: 36px;
+    font-weight: bold;
 
-  color: #FFF;
+    .Grey & {
+      color: $red-color
+    }
 
-  border: 0;
-  border-radius: 5px;
-  background-color: #1976D2;
-  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    .Yellow & {
+      color: $green-color;
+    }
 
-  font-size: 16px;
-  font-weight: 700;
+    .Green & {
+      color: $yellow-color;
+    }
+
+    .Red & {
+      color: $grey-color;
+    }
+}
+
+.LogoWrap {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.Logo {
+  height: 150px;
+
+    .Grey & {
+      fill: $green-color;
+    }
+
+    .Yellow & {
+      fill: $orange-color;
+    }
+
+    .Green & {
+      fill: $grey-color;
+    }
+
+    .Red & {
+      fill:$yellow-color;
+    }
+}
+
+.Hint {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+  .Green &,
+  .Red &,
+  .Orange & {
+        color: $white-color;
+    }
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+}
+
+.InputWrapper {
+  position: relative;
+  width: 80%;
+}
+
+.Submit {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  // background-color: #f0f0f0; /* Button background color */
+  border-radius: 50%; /* Optional: make the button circular */
+  transition: background-color 0.3s;
 
   &:hover {
-    background-color: #1565C0;
+    // background-color: #e0e0e0; /* Change color on hover */
+    fill: green;
   }
 
   &:active {
-    color: #1976D2;
-    background-color: #FFF;
-
-    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2) inset;
+    background-color: #d0d0d0; /* Change color on active click */
   }
 }
+
+.Svg {
+  width: 32px; /* Adjust icon size */
+  height: 32px;
+  fill: $green-color; /* Adjust icon color */
+  color: $green-color;
+}
+
+.Stash {
+  // visibility: hidden;
+  // opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.Stash.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.Stash.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.ErrorMessage {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Stash {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Input {
+  // background-color: ;
+  // border: none;
+  // border-bottom: 3px solid ;
+  outline: none;
+  // display: flex;
+  // justify-content: center;
+  font-size: 28px;
+  text-align: center;
+
+  border-radius: 28px;
+  width: 100%;
+}
+
+
+// .Input {
+//   // background-color: rgba(173, 216, 230, 0.8);
+//   display: inline-flex;
+//   margin: 6px;
+//   // width: 20vw;
+//   // height: 20vw;
+//   // border: 20px solid green;
+//   border: 6px solid red;
+//   border-image: repeating-linear-gradient(
+//       45deg,
+//       red,
+//     red 6px,
+//       white 6px,
+//       white 12px
+//     )
+//     6;
+
+//     border-radius: 50px;
+// }
+
+
+
+.Decor {
+  position: absolute;
+  width: 20px;
+  aspect-ratio: 1;
+  fill: white;
+  z-index: -1;
+  // top: 50%
+}
+
+.Candle {
+  top: 50%;
+  left: 50%;
+}
+
+.Leaves {
+  top: 30%;
+  left: 70%;
+}
+
+.Tree {
+  top: 70%;
+  left: 30%;
+}
+
+.Spiral {
+  top: 20%;
+  left: 35%;
+}
+
+.Star {
+  top: 15%;
+  left: 90%;
+}
+
+.Hat {
+  top: 80%;
+  left: 0%;
+}
+
+// .Grey .SubTask {
+//   color:$green-color;
+// }

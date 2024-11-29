@@ -1,0 +1,17 @@
+$black-color:#031318;;
+$white-color:#ffffff;
+$green-color: #14493e;
+$red-color: #a53737;
+$orange-color: #ff833e;
+$yellow-color: #f7c979;
+$grey-color: #d1e0c1;
+
+:export {
+    Black: $black-color;
+    width: $white-color;
+    Green: $green-color;
+    Red: $red-color;
+    Orange: $orange-color;
+    Yellow: $yellow-color;
+    Grey: $grey-color;
+}
